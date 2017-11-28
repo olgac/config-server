@@ -1,0 +1,15 @@
+spring:
+  appication:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/olgac/configs.git
+#          name: git_user
+#          password: git_pass
+          clone-on-start: true
+      enabled: true
+
+server:
+  port: 2000
